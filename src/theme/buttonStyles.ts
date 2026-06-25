@@ -24,6 +24,8 @@
  ============================================================
 */
 import { defineRecipe } from "@chakra-ui/react";
+import type { RecipeVariantProps } from "@chakra-ui/react";
+
 
 export const Button = defineRecipe({
   base: {
@@ -101,3 +103,7 @@ export const Button = defineRecipe({
     size: 'lg',
   },
 })
+
+
+type ButtonVariantProps = RecipeVariantProps<typeof Button>
+export interface ButtonProps extends React.PropsWithChildren<ButtonVariantProps> {}

@@ -60,7 +60,7 @@ export const CourseStore = create<CourseStoreType>()(
         setCourseState: (
             courseId,
             courseState
-        ) => set((state) => ({
+        ) => set((state: any) => ({
             courses: {
                 ...state.courses,
                 [courseId]: {
@@ -73,7 +73,7 @@ export const CourseStore = create<CourseStoreType>()(
         setTestState: (
             courseId,
             testState
-        ) => set((state) => ({
+        ) => set((state: any) => ({
             courses: {
                 ...state.courses,
                 [courseId]: {
@@ -86,7 +86,7 @@ export const CourseStore = create<CourseStoreType>()(
         setScore: (
             courseId,
             score
-        ) => set((state) => ({
+        ) => set((state: any) => ({
             courses: {
                 ...state.courses,
                 [courseId]: {

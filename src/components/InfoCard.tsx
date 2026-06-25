@@ -7,10 +7,17 @@ interface InfoCardData {
     description: string
 }
 
+type InfoCardVariant =
+  | "default"
+  | "disabled"
+  | "progress"
+  | "completed"
+  | "failed";
+
 interface InfoCardProps {
     data: InfoCardData,
     route: string
-    cardVariant: string,
+    cardVariant: InfoCardVariant,
     ctaText: string
     testScore: number | null;
 }

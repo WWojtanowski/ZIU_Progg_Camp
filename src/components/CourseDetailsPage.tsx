@@ -6,6 +6,7 @@ import Markdown from "react-markdown"
 import { ChevronDownIcon } from 'lucide-react';
 import { CourseStore } from "@/stores/CourseStore";
 import { useNavigate } from 'react-router-dom';
+import { ButtonProps } from '@/theme/buttonStyles';
 
 import SkeletonArticle from './SkeletonArticle';
 import LoadingCircle from './LoadingCircle';

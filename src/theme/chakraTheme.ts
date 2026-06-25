@@ -9,7 +9,7 @@ import { Input } from './inputStyles';
 import { globalStyles } from './globalStyles'
 
 
-export const chakraTheme = createSystem(defaultConfig, defineConfig({
+const chakraTheme = createSystem(defaultConfig, defineConfig({
   theme: {
     tokens: {
       fonts: {
@@ -222,10 +222,7 @@ export const chakraTheme = createSystem(defaultConfig, defineConfig({
   },
 
   globalCss: globalStyles
-
-  //,
-
-
-
-  
 }))
+
+export { chakraTheme }
+export default chakraTheme
