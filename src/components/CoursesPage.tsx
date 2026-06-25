@@ -36,6 +36,7 @@ export default function CoursesPage() {
             route="course"
             cardVariant={courses[course.id]?.courseState ?? "default"}
             ctaText="Otwórz kurs" 
+            testScore={null}
           />
         ))}
       </SimpleGrid>

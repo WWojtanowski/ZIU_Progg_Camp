@@ -1,9 +1,10 @@
 import './App.css'
-import { BrowserRouter, Routes, Route, Navigate, useLocation, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Box, Text } from '@chakra-ui/react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import { PageStore } from '@/stores/PageStore';
+import type { PageState } from '@/stores/PageStore';
 
 import NavBar from './components/NavBar';
 import Homepage from './components/Homepage';
@@ -13,7 +14,6 @@ import LoginPage from './components/LoginPage';
 import SignupPage from './components/SignupPage';
 import CourseDetailsPage from './components/CourseDetailsPage';
 import TestDetailsPage from './components/TestDetailsPage';
-import type { ReactElement } from 'react';
 
 
 
@@ -29,7 +29,7 @@ const pageVariants = {
 
 function App() {
 
-  const isLoggedIn = PageStore(state => state.isLoggedIn);
+  const isLoggedIn = PageStore((state: PageState) => state.isLoggedIn);
 
   function AnimatedLayout({ children }: AnimatedElementProps) {
 
