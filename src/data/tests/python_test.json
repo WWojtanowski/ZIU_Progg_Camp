@@ -1,0 +1,288 @@
+{
+  "testId": "0001",
+  "title": "Test Python dla początkujących",
+  "questions": [
+    {
+      "questionId": "Q01",
+      "content": "Który element jest najczęściej używany w PyCharm do zarządzania i uruchamiania kodu?",
+      "answers": [
+        {"text": "Terminal"},
+        {"text": "Konsola wyjściowa (Output Console)"},
+        {"text": "Kursor debuggera"},
+        {"text": "Środowisko wykonawcze (Run/Play button)"}
+      ]
+    },
+    {
+      "questionId": "Q02",
+      "content": "Która funkcja jest używana do wyświetlenia tekstu lub zmiennej w konsoli?",
+      "answers": [
+        {"text": "display()"},
+        {"text": "write()"},
+        {"text": "print()"},
+        {"text": "show()"}
+      ]
+    },
+    {
+      "questionId": "Q03",
+      "content": "Jeśli chcesz uzyskać dane wprowadzone przez użytkownika, jaką funkcję powinieneś użyć?",
+      "answers": [
+        {"text": "read()"},
+        {"text": "input()"},
+        {"text": "get_data()"},
+        {"text": "prompt()"}
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "content": "Który typ danych jest używany do przechowywania wartości tekstowych?",
+      "answers": [
+        {"text": "float"},
+        {"text": "str"},
+        {"text": "bool"},
+        {"text": "int"}
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "content": "Co zwróci wynik poniższego kodu: \"x = 10; y = '5'; print(int(y))\"?",
+      "answers": [
+        {"text": "Error"},
+        {"text": "'5'"},
+        {"text": "105"},
+        {"text": "5"}
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "content": "Która struktura danych pozwala na przechowywanie uporządkowanej, zmiennej kolekcji elementów, które nie mogą być zmodyfikowane?",
+      "answers": [
+        {"text": "list"},
+        {"text": "dict"},
+        {"text": "set"},
+        {"text": "tuple"}
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "content": "Jak poprawnie dostępować do drugiego elementu w liście o nazwie 'my_list'?",
+      "answers": [
+        {"text": "my_list[2]"},
+        {"text": "my_list(1)"},
+        {"text": "my_list[1]"},
+        {"text": "get(my_list, 1)"}
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "content": "Jaki operator jest używany do sprawdzania równości wartości w Pythonie?",
+      "answers": [
+        {"text": "="},
+        {"text": "<>"},
+        {"text": "=="},
+        {"text": "!="}
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "content": "Która struktura danych przechowuje dane w parach klucz-wartość (key-value)?",
+      "answers": [
+        {"text": "list"},
+        {"text": "tuple"},
+        {"text": "set"},
+        {"text": "dict"}
+      ]
+    },
+    {
+      "questionId": "Q10",
+      "content": "Jeśli warunek 'wiek >= 18' jest fałszywy, a następnie sprawdzasz 'czy_student_premium', jaki blok kodu zostanie wykonany?",
+      "answers": [
+        {"text": "if"},
+        {"text": "else"},
+        {"text": "elif"},
+        {"text": "why"}
+      ]
+    },
+    {
+      "questionId": "Q11",
+      "content": "Który słowo kluczowe jest używane do zakończenia pętli i natychmiastowego przejścia do następnej iteracji, ignorując resztę kodu w bloku?",
+      "answers": [
+        {"text": "exit"},
+        {"text": "break"},
+        {"text": "continue"},
+        {"text": "skip"}
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "content": "Jaki zakres wartości będzie osiągnięty przez pętlę: 'for i in range(3):'?",
+      "answers": [
+        {"text": "0, 1, 2"},
+        {"text": "(0, 1)"},
+        {"text": "[1, 2, 3]"},
+        {"text": "3"}
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "content": "Co jest poprawny sposób użycia pętli 'while'?",
+      "answers": [
+        {"text": "Wykonanie kodu tak długo, aż zostanie zdefiniowane 'stop'"},
+        {"text": "Wykonanie kodu dokładnie tyle razy, ile elementów w liście."},
+        {"text": "Wykonanie kodu warunkowo, dopóki określony warunek jest prawdą (True)."},
+        {"text": "Wywołuje się ją tylko raz, jeśli nie ma zmiennych."}
+      ]
+    },
+    {
+      "questionId": "Q14",
+      "content": "Jeśli funkcja 'calculate(a)' nie posiada instrukcji 'return', co zostanie zwrócone po jej wywołaniu?",
+      "answers": [
+        {"text": "0"},
+        {"text": "True"},
+        {"text": "Błąd (Error)"},
+        {"text": "Żadna wartość domyślna (None)"}
+      ]
+    },
+    {
+      "questionId": "Q15",
+      "content": "W jakiej części definicji funkcji określasz wartości, które funkcja przyjmuje odwołując się do argumentów? (Np. def func(a=10):)",
+      "answers": [
+        {"text": "Parametry"},
+        {"text": "Argumenty domyślne"},
+        {"text": "Zmienne lokalne"},
+        {"text": "Stałe wyjściowe"}
+      ]
+    },
+    {
+      "questionId": "Q16",
+      "content": "Jaki wynik otrzymasz po wykonaniu kodu: 'print(round(3.14, 0))'?",
+      "answers": [
+        {"text": "3.1"},
+        {"text": "3.14"},
+        {"text": "3"},
+        {"text": "3.0"}
+      ]
+    },
+    {
+      "questionId": "Q17",
+      "content": "Która funkcja matematyczna zwróci największą wartość z podanych liczb: '(5, 2)'?",
+      "answers": [
+        {"text": "min()"},
+        {"text": "median()"},
+        {"text": "sum()"},
+        {"text": "max()"}
+      ]
+    },
+    {
+      "questionId": "Q18",
+      "content": "Jak poprawnie obliczyć kwadrat liczby 'x' w Pythonie?",
+      "answers": [
+        {"text": "math.pow(x, 2)"},
+        {"text": "x^2"},
+        {"text": "x * 2"},
+        {"text": "sqrt(x) * sqrt(x)"}
+      ]
+    },
+    {
+      "questionId": "Q19",
+      "content": "Wybierz najbardziej odpowiednią funkcję do obliczenia wartości pierwiastka kwadratowego z liczby 'n'.",
+      "answers": [
+        {"text": "pow(n, 0.5)"},
+        {"text": "root(n)"},
+        {"text": "math.sqrt(n)"},
+        {"text": "math.square(n)"}
+      ]
+    },
+    {
+      "questionId": "Q20",
+      "content": "Jaka jest główna zaleta używania 'set' (zbiorów) w porównaniu do list?",
+      "answers": [
+        {"text": "Można w nich przechowywać różne typy danych."},
+        {"text": "Są bardziej czytelne dla człowieka."},
+        {"text": "Automatycznie usuwają duplikaty elementów i są szybkie przy operacjach unikalności."},
+        {"text": "Pozwalają na uporządkowanie kolejności dodawania danych."}
+      ]
+    }
+  ],
+  "correctAnswers": [
+    {
+      "questionId": "Q01",
+      "answer": "Środowisko wykonawcze (Run/Play button)"
+    },
+    {
+      "questionId": "Q02",
+      "answer": "print()"
+    },
+    {
+      "questionId": "Q03",
+      "answer": "input()"
+    },
+    {
+      "questionId": "Q04",
+      "answer": "str"
+    },
+    {
+      "questionId": "Q05",
+      "answer": "5"
+    },
+    {
+      "questionId": "Q06",
+      "answer": "tuple"
+    },
+    {
+      "questionId": "Q07",
+      "answer": "my_list[1]"
+    },
+    {
+      "questionId": "Q08",
+      "answer": "=="
+    },
+    {
+      "questionId": "Q09",
+      "answer": "dict"
+    },
+    {
+      "questionId": "Q10",
+      "answer": "elif"
+    },
+    {
+      "questionId": "Q11",
+      "answer": "continue"
+    },
+    {
+      "questionId": "Q12",
+      "answer": "0, 1, 2"
+    },
+    {
+      "questionId": "Q13",
+      "answer": "Wykonanie kodu warunkowo, dopóki określony warunek jest prawdą (True)."
+    },
+    {
+      "questionId": "Q14",
+      "answer": "Żadna wartość domyślna (None)"
+    },
+    {
+      "questionId": "Q15",
+      "answer": "Argumenty domyślne"
+    },
+    {
+      "questionId": "Q16",
+      "answer": "3"
+    },
+    {
+      "questionId": "Q17",
+      "answer": "max()"
+    },
+    {
+      "questionId": "Q18",
+      "answer": "math.pow(x, 2)"
+    },
+    {
+      "questionId": "Q19",
+      "answer": "math.sqrt(n)"
+    },
+    {
+      "questionId": "Q20",
+      "answer": "Automatycznie usuwają duplikaty elementów i są szybkie przy operacjach unikalności."
+    }
+  ]
+}

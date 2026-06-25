@@ -1,0 +1,288 @@
+{
+  "testId": "0003",
+  "title": "Test CSS dla początkujących",
+  "questions": [
+    {
+      "questionId": "Q01",
+      "content": "Który sposób wprowadzania stylów jest najbardziej zalecany w projektach, ponieważ oddziela wygląd od struktury HTML?",
+      "answers": [
+        {"text": "Styling wewnętrzny (w tagu <style>)."},
+        {"text": "Inline CSS (bezpośrednio w atrybucie elementu)."},
+        {"text": "Zewnętrzny plik CSS (np. style.css)."},
+        {"text": "Wykorzystanie wyłącznie znacznika <head>."}
+      ]
+    },
+    {
+      "questionId": "Q02",
+      "content": "Jaki jest prawidłowy sposób przypisania właściwości koloru tekstu do elementu o ID 'main-title'?",
+      "answers": [
+        {"text": "#main-title { color: blue; }"},
+        {"text": ".main-title = color: blue;"},
+        {"text": "main-title { color: blue; }"},
+        {"text": "<main-title> { color: blue; }"}
+      ]
+    },
+    {
+      "questionId": "Q03",
+      "content": "W modelowaniu boxu, czym różni się 'padding' od 'margin'?",
+      "answers": [
+        {"text": "'Padding' to przestrzeń wokół treści (wewnątrz border), natomiast 'margin' jest odstępem między elementami."},
+        {"text": "Nie ma różnicy; oba określają zewnętrzny odstęp."},
+        {"text": "Margin dotyczy tylko obrazów, a padding dotyczy tekstu."},
+        {"text": "Padding zawsze wymusza zmianę rozmiaru elementów."}
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "content": "Jakie właściwości CSS należy użyć, aby wyśrodkować blok tekstowy na stronie?",
+      "answers": [
+        {"text": "align: center;"},
+        {"text": "horizontal-align: center;"},
+        {"text": "text-align: center;"},
+        {"text": "center-text: block;"}
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "content": "Jeśli ustawimy element na 'width: 200px;' i 'height: 150px;', co stanie się z jego wymiarem?",
+      "answers": [
+        {"text": "Wymiary będą zawsze ignorowane, jeśli zawartość jest zbyt duża."},
+        {"text": "Element będzie miał stałe wymiary 200x150 pikseli."},
+        {"text": "Wymiary zostaną automatycznie skorygowane przez przeglądarkę."},
+        {"text": "Działa to tylko dla elementów typu inline."}
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "content": "Aby tło elementu było obrazem, który powtarza się pionowo i poziomo, ale ma być przesunięte o 5% w poziomie, co należy użyć?",
+      "answers": [
+        {"text": "background-image: url('img.jpg'); background-repeat: repeat; background-position: -5%;"},
+        {"text": "background: image(img.jpg); repeat: yes; position: 5%;"},
+        {"text": "background-size: auto; background-repeat: no-repeat;"},
+        {"text": "Należy użyć tylko właściwości 'image' i ustawić ją na 'repeat'."}
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "content": "Jaka właściwość jest używana do zaokrąglenia rogów bloku elementu?",
+      "answers": [
+        {"text": "border-round:"},
+        {"text": "corner-radius:"},
+        {"text": "border-radius:"},
+        {"text": "box-shape: curve;"}
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "content": "Jeśli chcemy, aby tekst był bardziej rozdzielony i miał czytelniejszą linię tekstu w bloku (większe odstępy między kolejnymi liniami), jaką właściwość powiniśmy zastosować?",
+      "answers": [
+        {"text": "letter-spacing:"},
+        {"text": "word-spacing:"},
+        {"text": "line-height:"},
+        {"text": "font-size: larger;"}
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "content": "Który sposób stylizacji ma największą wagę (specyficzność) i najprawdopodobniej nadpisze style z innych źródeł?",
+      "answers": [
+        {"text": "Użycie zewnętrznego pliku CSS."},
+        {"text": "Nadanie stylu za pomocą klasy CSS (.moja-klasa)."},
+        {"text": "Stylowanie przez ID (#moje-id)."},
+        {"text": "Inline CSS (bezpośrednio w atrybucie elementu HTML)." }
+      ]
+    },
+    {
+      "questionId": "Q10",
+      "content": "Jeśli zawartość bloku jest zbyt duża i wykracza poza jego zdefiniowane wymiary, jaką właściwość powinniśmy użyć, aby kontrolować tym zachowaniem (np. przewijanie)?",
+      "answers": [
+        {"text": "width-overflow:"},
+        {"text": "content-size: contain;"},
+        {"text": "overflow:"},
+        {"text": "display: scroll;"}
+      ]
+    },
+    {
+      "questionId": "Q11",
+      "content": "Jakie pozycjonowanie ('position') jest niezbędne, aby element o pozycji 'absolute' był względem najbliższego rodzica, który nie ma domyślnej pozycji (np. 'relative')?",
+      "answers": [
+        {"text": "static"},
+        {"text": "fixed"},
+        {"text": "relative"},
+        {"text": "sticky"}
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "content": "Która własność CSS kontroluje porządek na który elementy są nakładane na siebie (stacking order)?",
+      "answers": [
+        {"text": "z-index"},
+        {"text": "opacity"},
+        {"text": "layer"},
+        {"text": "position-depth"}
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "content": "Jaki typ wyświetlania ('display') sprawi, że element będzie zachowywał się jak blok (cała szerokość), ale pozwoli na ustawienie marginesów po bokach tak, jak w przypadku elementów 'inline'?",
+      "answers": [
+        {"text": "block"},
+        {"text": "none"},
+        {"text": "list-item"},
+        {"text": "inline-block"}
+      ]
+    },
+    {
+      "questionId": "Q14",
+      "content": "Który selektor CSS jest używany do wyznaczenia, że element musi być *bezpośrednim* dzieckiem innego elementu?",
+      "answers": [
+        {"text": "' '"},
+        {"text": "'~'"},
+        {"text": "'>'"},
+        {"text": "','"}
+      ]
+    },
+    {
+      "questionId": "Q15",
+      "content": "Jeśli chcemy zastosować styl tylko do wszystkich elementów na stronie, niezależnie od ich typu, którego selektora użyjemy?",
+      "answers": [
+        {"text": ":universal"},
+        {"text": "*"},
+        {"text": "element"},
+        {"text": ".all"}
+      ]
+    },
+    {
+      "questionId": "Q16",
+      "content": "Jakie pseudoklasy używamy, aby stylizować element dokładnie w momencie, gdy użytkownik najedzie na niego kursorem?",
+      "answers": [
+        {"text": ":focus"},
+        {"text": ":active"},
+        {"text": ":hover"},
+        {"text": ":visited"}
+      ]
+    },
+    {
+      "questionId": "Q17",
+      "content": "Aby stylizować tylko pierwszą literę tekstu w bloku, którego używamy pseudoelementu?",
+      "answers": [
+        {"text": "::first-letter"},
+        {"text": ":first-line"},
+        {"text": "::start"},
+        {"text": ".initial"}
+      ]
+    },
+    {
+      "questionId": "Q18",
+      "content": "Jaka własność jest kluczowa, gdy chcemy, aby krawędzie (border) komórek w tabeli były łączone i nie tworzyły podwójnej linii?",
+      "answers": [
+        {"text": "table-spacing: 0"},
+        {"text": "border-collapse: collapse"},
+        {"text": "border-merge: true"},
+        {"text": "display: grid"}
+      ]
+    },
+    {
+      "questionId": "Q19",
+      "content": "Jeśli chcemy ukryć element całkowicie, ale jednocześnie nie usuwać go z układu strony (dla celów czytnosłości kodu), której wartości użyjemy dla właściwości 'display'?",
+      "answers": [
+        {"text": "visibility: hidden"},
+        {"text": "opacity: 0"},
+        {"text": "display: none"},
+        {"text": "display: block"}
+      ]
+    },
+    {
+      "questionId": "Q20",
+      "content": "Jak możemy selektywnie zaadresować element '<input type=\"email\">' bez polegania na jego ID czy klasie?",
+      "answers": [
+        {"text": "input.type=email"},
+        {"text": "[type='email']"},
+        {"text": ".input[type='email']"},
+        {"text": ":type(email)"}
+      ]
+    }
+  ],
+  "correctAnswers": [
+    {
+      "questionId": "Q01",
+      "answer": "Zewnętrzny plik CSS (np. style.css)."
+    },
+    {
+      "questionId": "Q02",
+      "answer": "#main-title { color: blue; }"
+    },
+    {
+      "questionId": "Q03",
+      "answer": "'Padding' to przestrzeń wokół treści (wewnątrz border), natomiast 'margin' jest odstępem między elementami."
+    },
+    {
+      "questionId": "Q04",
+      "answer": "text-align: center;"
+    },
+    {
+      "questionId": "Q05",
+      "answer": "Element będzie miał stałe wymiary 200x150 pikseli."
+    },
+    {
+      "questionId": "Q06",
+      "answer": "background-image: url('img.jpg'); background-repeat: repeat; background-position: -5%;"
+    },
+    {
+      "questionId": "Q07",
+      "answer": "border-radius:"
+    },
+    {
+      "questionId": "Q08",
+      "answer": "line-height:"
+    },
+    {
+      "questionId": "Q09",
+      "answer": "Inline CSS (bezpośrednio w atrybucie elementu HTML)."
+    },
+    {
+      "questionId": "Q10",
+      "answer": "overflow:"
+    },
+    {
+      "questionId": "Q11",
+      "answer": "relative"
+    },
+    {
+      "questionId": "Q12",
+      "answer": "z-index"
+    },
+    {
+      "questionId": "Q13",
+      "answer": "inline-block"
+    },
+    {
+      "questionId": "Q14",
+      "answer": "'>'"
+    },
+    {
+      "questionId": "Q15",
+      "answer": "*"
+    },
+    {
+      "questionId": "Q16",
+      "answer": ":hover"
+    },
+    {
+      "questionId": "Q17",
+      "answer": "::first-letter"
+    },
+    {
+      "questionId": "Q18",
+      "answer": "border-collapse: collapse"
+    },
+    {
+      "questionId": "Q19",
+      "answer": "visibility: hidden"
+    },
+    {
+      "questionId": "Q20",
+      "answer": "[type='email']"
+    }
+  ]
+}

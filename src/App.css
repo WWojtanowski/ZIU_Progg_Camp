@@ -1,0 +1,14 @@
+#root {
+  margin: 0 5vh;
+}
+
+.code-window {
+  font-family: 'Fira Code', monospace;
+}
+
+footer {
+  padding: 5vh;
+  text-align: center;
+}
+
+

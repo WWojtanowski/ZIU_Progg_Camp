@@ -1,0 +1,50 @@
+{
+  "courseId": "0001",
+  "title": "Python Course",
+  "description": "Learn Python! Recommended for begginers.",
+  "chapters": [
+    {
+      "chapterId": "01",
+      "title": "Pobieranie i Przygotowanie Narzędzi",
+      "filename": "python_art1.md"
+    },
+    {
+      "chapterId": "02",
+      "title": "Podstawowe Operacje",
+      "filename": "python_art2.md"
+      
+    },
+    {
+      "chapterId": "03",
+      "title": "Typy Danych",
+      "filename": "python_art3.md"
+    },
+    {
+      "chapterId": "04",
+      "title": "Tabele i Kolekcje",
+      "filename": "python_art4.md"
+    },
+    {
+      "chapterId": "05",
+      "title": "Wyrażenia Warunkowe",
+      "filename": "python_art5.md"
+      
+    },
+    {
+      "chapterId": "06",
+      "title": "Wyrażenia Pętlowe",
+      "filename": "python_art6.md"
+    },
+    {
+      "chapterId": "07",
+      "title": "Funkcje",
+      "filename": "python_art7.md"
+      
+    },
+    {
+      "chapterId": "08",
+      "title": "Matematyka w Pythonie",
+      "filename": "python_art8.md"
+    }
+  ]
+}

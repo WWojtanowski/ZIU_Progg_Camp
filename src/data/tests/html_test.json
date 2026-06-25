@@ -1,0 +1,218 @@
+{
+  "testId": "0002",
+  "title": "Test HTML dla początkujących",
+  "questions": [
+    {
+      "questionId": "01",
+      "content": "Jaki znacznik jest niezbędny, aby określić początek dokumentu HTML5?",
+      "answers": [
+        {"text": "<!DOCTYPE html>"},
+        {"text": "<html type='html'>"},
+        {"text": "<doctype html>"},
+        {"text": "<head html>"}
+      ]
+    },
+    {
+      "questionId": "02",
+      "content": "Jaki atrybut w tagu <meta> jest kluczowy dla zapewnienia poprawnego wyświetlania polskich znaków?",
+      "answers": [
+        {"text": "charset=UTF-8"},
+        {"text": "encoding='Polish'"},
+        {"text": "lang='pl'"},
+        {"text": "content='utf-8'"}
+      ]
+    },
+    {
+      "questionId": "03",
+      "content": "Który znacznik jest przeznaczony na tytuł, który użytkownik widzi w zakładce przeglądarki?",
+      "answers": [
+        {"text": "<title>"},
+        {"text": "<header>"},
+        {"text": "<meta title>"},
+        {"text": "<h1>"}
+      ]
+    },
+    {
+      "questionId": "04",
+      "content": "W jakiej hierarchii powinny być używane nagłówki, aby zachować poprawność struktury tekstu?",
+      "answers": [
+        {"text": "H1 -> H3 -> H2 -> H4"},
+        {"text": "H1 -> H2 -> H3"},
+        {"text": "H2 -> H1 -> H3"},
+        {"text": "H3 -> H2 -> H1"}
+      ]
+    },
+    {
+      "questionId": "05",
+      "content": "Jaka jest różnica między elementami '<span>' a '<div>'?",
+      "answers": [
+        {"text": "'<div>' może być używany tylko do tabel."},
+        {"text": "'<span>' zmienia układ strony, podczas gdy '<div>' nie."},
+        {"text": "'<div>' jest blokowy i służy do grupowania dużych sekcji, a '<span>' jest inline (w linii)."},
+        {"text": "Nie ma znaczącej różnicy w nowoczesnym HTML."}
+      ]
+    },
+    {
+      "questionId": "06",
+      "content": "Który atrybut powinien zostać użyty w tagu <a>, aby link otwierał się w nowej zakładce?",
+      "answers": [
+        {"text": "target='newtab'"},
+        {"text": "'_blank'"},
+        {"text": "window='new'"},
+        {"text": "open='true'"}
+      ]
+    },
+    {
+      "questionId": "07",
+      "content": "Który atrybut znacznika 'img' jest kluczowy dla osób z poważnymi wadami wzroku?",
+      "answers": [
+        {"text": "width"},
+        {"text": "src-alt"},
+        {"text": "alt"},
+        {"text": "description"}
+      ]
+    },
+    {
+      "questionId": "08",
+      "content": "Jeśli chcesz stworzyć listę, w której kolejność elementów ma znaczenie numeryczne, powinieneś użyć:",
+      "answers": [
+        {"text": "<ul />"},
+        {"text": "<dl />"},
+        {"text": "<ol />"},
+        {"text": "<list />"}
+      ]
+    },
+    {
+      "questionId": "09",
+      "content": "W strukturze tabeli, do oznaczania nagłówków kolumn używa się tagu:",
+      "answers": [
+        {"text": "<data>"},
+        {"text": "<th />"},
+        {"text": "<headrow>"},
+        {"text": "<colname>"}
+      ]
+    },
+    {
+      "questionId": "10",
+      "content": "Jeśli chcemy, aby jedna komórka w tabeli rozciągała się na trzy kolumny, którego atrybutu należy użyć?",
+      "answers": [
+        {"text": "rowspan='3'"},
+        {"text": "colspan='3'"},
+        {"text": "col-span=3"},
+        {"text": "merge='3'"}
+      ]
+    },
+    {
+      "questionId": "11",
+      "content": "Jaki element jest najlepszą praktyką dla zapewnienia, że etykieta tekstu (np. 'Imię:') jest powiązana z odpowiednim polem wprowadzania danych?",
+      "answers": [
+        {"text": "Użycie klasy CSS"},
+        {"text": "Znacznik '<b>' wokół labela"},
+        {"text": "Tag '<label>' i atrybut 'for'"},
+        {"text": "Opisanie w komentarzu HTML"}
+      ]
+    },
+    {
+      "questionId": "12",
+      "content": "Jeśli użytkownik ma wpisywać swój adres e-mail, który typ pola '<input>' powinien zostać użyty?",
+      "answers": [
+        {"text": "type='text'"},
+        {"text": "type='email'"},
+        {"text": "type='mailto'"},
+        {"text": "type='user@domain.com'"}
+      ]
+    },
+    {
+      "questionId": "13",
+      "content": "Który znacznik semantyczny powinien otaczać główną, unikalną zawartość strony (treści artykułu)?",
+      "answers": [
+        {"text": "<container>"},
+        {"text": "<main>"},
+        {"text": "<article-content>"},
+        {"text": "<section-body>"}
+      ]
+    },
+    {
+      "questionId": "14",
+      "content": "Gdzie w strukturze strony powinno znajdować się nawigacyjne menu, które pomaga użytkownikowi poruszać się po witrynie?",
+      "answers": [
+        {"text": "<header>"},
+        {"text": "<div class='menu'>"},
+        {"text": "<nav>"},
+        {"text": "<aside>"}
+      ]
+    },
+    {
+      "questionId": "15",
+      "content": "Który znacznik jest zalecany do umieszczenia informacji o prawach autorskich lub kontakcie na dole strony?",
+      "answers": [
+        {"text": "<end-section>"},
+        {"text": "<footer style='bottom'>"},
+        {"text": "<aside footer>"},
+        {"text": "<footer>"}
+      ]
+    }
+  ],
+  "correctAnswers": [
+    {
+      "questionId": "01",
+      "answer": "<!DOCTYPE html>"
+    },
+    {
+      "questionId": "02",
+      "answer": "charset=UTF-8"
+    },
+    {
+      "questionId": "03",
+      "answer": "<title>"
+    },
+    {
+      "questionId": "04",
+      "answer": "H1 -> H2 -> H3"
+    },
+    {
+      "questionId": "05",
+      "answer": "'<div>' jest blokowy i służy do grupowania dużych sekcji, a '<span>' jest inline (w linii)."
+    },
+    {
+      "questionId": "06",
+      "answer": "'_blank'"
+    },
+    {
+      "questionId": "07",
+      "answer": "alt"
+    },
+    {
+      "questionId": "08",
+      "answer": "<ol />"
+    },
+    {
+      "questionId": "09",
+      "answer": "<th />"
+    },
+    {
+      "questionId": "10",
+      "answer": "colspan='3'"
+    },
+    {
+      "questionId": "11",
+      "answer": "Tag '<label>' i atrybut 'for'"
+    },
+    {
+      "questionId": "12",
+      "answer": "type='email'"
+    },
+    {
+      "questionId": "13",
+      "answer": "<main>"
+    },
+    {
+      "questionId": "14",
+      "answer": "<nav>"
+    },
+    {
+      "questionId": "15",
+      "answer": "<footer>"
+    }
+  ]
+}

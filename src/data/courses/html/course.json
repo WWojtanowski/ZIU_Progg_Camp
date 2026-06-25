@@ -1,0 +1,54 @@
+{
+  "courseId": "0002",
+  "title": "HTML Course",
+  "chapters": [
+    {
+      "chapterId": "01",
+      "title": "Pobieranie i Przygotowanie Narzędzi",
+      "filename": "html_art1.md"
+    },
+    {
+      "chapterId": "02",
+      "title": "Struktura Strony Internetowej",
+      "filename": "html_art2.md"
+      
+    },
+    {
+      "chapterId": "03",
+      "title": "Atrybuty Języka i Nagłówek 'head'",
+      "filename": "html_art3.md"
+    },
+    {
+      "chapterId": "04",
+      "title": "Podstawowe Znaczniki w Treści",
+      "filename": "html_art4.md"
+    },
+    {
+      "chapterId": "05",
+      "title": "Odsyłacze i Multimedia",
+      "filename": "html_art5.md"
+      
+    },
+    {
+      "chapterId": "06",
+      "title": "Listy",
+      "filename": "html_art6.md"
+    },
+    {
+      "chapterId": "07",
+      "title": "Tabele",
+      "filename": "html_art7.md"
+      
+    },
+    {
+      "chapterId": "08",
+      "title": "Formularze",
+      "filename": "html_art8.md"
+    },
+    {
+      "chapterId": "09",
+      "title": "Znaczniki Semantyczne",
+      "filename": "html_art9.md"
+    }
+  ]
+}

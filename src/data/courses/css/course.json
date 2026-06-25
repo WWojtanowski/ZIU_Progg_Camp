@@ -1,0 +1,56 @@
+{
+  "courseId": "0003",
+  "title": "CSS Course",
+  "chapters": [
+    {
+      "chapterId": "01",
+      "title": "Kaskadowość i Metody Wprowadzania Stylów",
+      "filename": "css_art1.md"
+    },
+    {
+      "chapterId": "02",
+      "title": "Podstawowa Składnia CSS",
+      "filename": "css_art2.md"
+    },
+    {
+      "chapterId": "03",
+      "title": "Typografia i Formatowanie Tekstu",
+      "filename": "css_art3.md"
+    },
+    {
+      "chapterId": "04",
+      "title": "Rozmiar Bloku i Tło",
+      "filename": "css_art4.md"
+    },
+    {
+      "chapterId": "05",
+      "title": "Obramowanie i Odstępy",
+      "filename": "css_art5.md"
+    },
+    {
+      "chapterId": "06",
+      "title": "Pozycjonowanie",
+      "filename": "css_art6.md"
+    },
+    {
+      "chapterId": "07",
+      "title": "Wyświetlanie Elementów",
+      "filename": "css_art7.md"
+    },
+    {
+      "chapterId": "08",
+      "title": "Właściwości List i Tabel",
+      "filename": "css_art8.md"
+    },
+    {
+      "chapterId": "09",
+      "title": "Zaawansowane Selektory",
+      "filename": "css_art9.md"
+    },
+    {
+      "chapterId": "10",
+      "title": "Pseudoklasy i Pseudoelementy",
+      "filename": "css_art10.md"
+    }
+  ]
+}
