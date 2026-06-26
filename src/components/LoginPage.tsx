@@ -43,7 +43,7 @@ export default function LoginPage() {
 
   return (
     <Box as="section" textAlign='center' py={16}>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form aria-label='Formularz logowania' onSubmit={handleSubmit(onSubmit)}>
           <Field.Root alignItems='center' invalid={!!errors.username || !!errors.password}>
 
             <Box py={2}>
@@ -52,6 +52,7 @@ export default function LoginPage() {
               </Field.Label>
               <Input
                 id='username'
+                aria-describedby="username"
                 {...register('username', {
                   required: 'Pole wymagane',
                   minLength: { value: 4, message: 'Minimum 4 znaki.' },
@@ -67,6 +68,7 @@ export default function LoginPage() {
               <Input
                 id='password'
                 type="password"
+                aria-describedby="password"
                 {...register('password', {
                   required: 'Pole wymagane'
                 })}

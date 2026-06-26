@@ -35,7 +35,6 @@ export default function SignupPage() {
     check = check && (/[A-Z]/.test(password))
     check = check && (/[a-z]/.test(password))
     check = check && (/[0-9]/.test(password))
-
     return check;
   }
 
@@ -56,13 +55,14 @@ export default function SignupPage() {
   return (
     <Box as="section" textAlign='center' py={16}>
       {!isRegistered && (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form aria-label='Formularz rejestracji' onSubmit={handleSubmit(onSubmit)}>
             <Field.Root alignItems='center' invalid={!!errors.username || !!errors.email || !!errors.password || !!errors.confirmPassword}>
 
               <Box py={2}>
                 <Field.Label htmlFor='username' py={2}>Nazwa użytkownika:</Field.Label>
                 <Input
                   id='username'
+                  aria-describedby="username"
                   {...register('username', {
                     required: 'Pole wymagane',
                     minLength: { value: 4, message: 'Minimum 4 znaki.' },
@@ -77,6 +77,7 @@ export default function SignupPage() {
                 <Field.Label htmlFor='email' py={2}>E-mail:</Field.Label>
                 <Input
                   id='email'
+                  aria-describedby="e-mail"
                   {...register('email', {
                     required: 'Pole wymagane',
                     validate: (value) => 
@@ -93,18 +94,21 @@ export default function SignupPage() {
                 <Input
                   id='password'
                   type="password"
+                  aria-describedby="password"
                   {...register('password', {
                     required: 'Pole wymagane',
                     validate: (value) => 
                       value ? (passwordChecker(value) ? undefined : 'Hasło musi spełniać poszczególne kryteria.') : undefined,
                   })}
                 />
-                <Field.HelperText color="text.secondary">
-                  Minimum 6 liter w tym: 1 mała, 1 duża i 1 cyfra.
-                </Field.HelperText>
                 <Field.ErrorText color="semantic.error">
                   {errors.password && errors.password.message}
                 </Field.ErrorText>
+                <Field.HelperText>
+                  <Text color="text.secondary">
+                    Minimum 6 liter w tym: 1 mała, 1 duża i 1 cyfra.
+                  </Text>
+                </Field.HelperText>
               </Box>
 
               <Box py={2}>
@@ -112,6 +116,7 @@ export default function SignupPage() {
                 <Input
                   id='confirm-password'
                   type="password"
+                  aria-describedby="confirm-password"
                   {...register('confirmPassword', {
                     required: 'Pole wymagane'
                   })}
@@ -122,7 +127,7 @@ export default function SignupPage() {
               </Box>
               
             </Field.Root>
-            <Button type='submit' mt={4} variant="primary" loading={isSubmitting}>
+            <Button type='submit' variant="primary" mt={4} loading={isSubmitting}>
               Zarejestruj się
             </Button>
 

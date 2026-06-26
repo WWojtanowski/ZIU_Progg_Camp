@@ -140,7 +140,7 @@ export default function CourseDetailsPage() {
   const CourseMenu = () => (
     <Menu.Root>
       <Menu.Trigger>
-        <Button key="trigger">
+        <Button key="trigger" aria-label="Przycisk zmiany rozdziału">
             {courseData.chapters[chapterIdx].title}
             <ChevronDownIcon />
         </Button>
@@ -162,6 +162,7 @@ export default function CourseDetailsPage() {
   return (
     <Box 
       as="section" 
+      aria-label="Widok kursu"
       layerStyle="glass"
       py={6}
       borderRadius="2xl"
@@ -174,7 +175,7 @@ export default function CourseDetailsPage() {
             <CourseMenu />
           </Box>
 
-          <Box layerStyle="glass" py={4}>
+          <Box aria-live="polite" py={4}>
             {loading ? (<SkeletonArticle />) : (
               <Prose 
                 mx="auto"

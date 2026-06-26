@@ -11,7 +11,7 @@ export default function Homepage() {
   const isLoggedIn = PageStore((state) => state.isLoggedIn);
 
   return (
-    <Box as="section" py={16}>
+    <Box as="section" aria-label="Strona Główna" py={16}>
       <Flex
         direction={{ base: 'column', lg: 'row' }}
         align="center"
@@ -34,7 +34,7 @@ export default function Homepage() {
           <HStack>
             <Button 
               variant="primary"
-              aria-label='CTA Button'
+              aria-label='Rozpocznij przygodę'
               onClick={() => navigate(isLoggedIn ? '/courses' : '/login')}
             >
               Rozpocznij przygodę

@@ -7,6 +7,7 @@ export interface SignupRequest {
 
 export interface SignupResponse {
   success: boolean;
+  code: number;
   message?: string;
 }
 
@@ -21,11 +22,13 @@ export async function signupMock(data: SignupRequest): Promise<SignupResponse> {
   ) {
     return {
       success: true,
+      code: 200
     };
   }
 
   return {
     success: false,
+    code: 400,
     message: "Podane hasła nie są takie same.",
   };
 }

@@ -89,7 +89,7 @@ export default function NavBar() {
     return (
       <Drawer.Root placement='top'>
         <Drawer.Trigger asChild>
-          <Button variant="ghostModern" size="md">
+          <Button variant="ghostModern" aria-label="drawer-menu" size="md">
             <Menu />
           </Button>
         </Drawer.Trigger>

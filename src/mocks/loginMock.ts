@@ -5,6 +5,7 @@ export interface LoginRequest {
 
 export interface LoginResponse {
   success: boolean;
+  code: number;
   message?: string;
 }
 
@@ -21,11 +22,13 @@ export async function loginMock(
   ) {
     return {
       success: true,
+      code: 200
     };
   }
 
   return {
     success: false,
+    code: 400,
     message: "Nieprawidłowa nazwa użytkownika lub hasło.",
   };
 }

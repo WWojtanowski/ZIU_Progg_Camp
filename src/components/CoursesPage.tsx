@@ -27,7 +27,7 @@ export default function CoursesPage() {
   const courses = CourseStore(state => state.courses);
 
   return (
-    <Box as="section" py={16}>
+    <Box as="section" aria-label="Panel kursów" py={16}>
       <SimpleGrid gap={4} templateColumns='repeat(auto-fill, minmax(300px, 1fr))'>
         {coursesData.map(course => (
           <InfoCard 

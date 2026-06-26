@@ -114,7 +114,7 @@ export default function TestDetailsPage() {
   }
 
   return (
-    <Box as="section" py={16}>
+    <Box as="section" aria-label="Widok testu" aria-live="polite" py={16}>
       {testData !== null ? (
         <>
           <Heading>{test.title}</Heading>

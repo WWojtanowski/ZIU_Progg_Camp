@@ -54,42 +54,45 @@ function App() {
     <Box className="app-shell">
         <BrowserRouter>
           <NavBar />
-          <Routes>
-            <Route path="/" element={
-                <AnimatedLayout>
-                  <Homepage/>
-                </AnimatedLayout>
-              }
-            />
-            <Route path="/courses" element={
-                <AnimatedLayout>
-                  {isLoggedIn ? <CoursesPage/> : <Navigate to="/" />}
-                </AnimatedLayout>
-              }
-            />
-            <Route path="/tests" element={
-                <AnimatedLayout>
-                  {isLoggedIn ? <TestsPage/> : <Navigate to="/" />}
-                </AnimatedLayout>
-              }
-            />
-            <Route path="/login" element={
-                <AnimatedLayout>
-                  {!isLoggedIn ? <LoginPage/> : <Navigate to="/" />}
-                </AnimatedLayout>
-              }
-            />
-            <Route path="/signup" element={
-                <AnimatedLayout>
-                  {!isLoggedIn ? <SignupPage/> : <Navigate to="/" />}
-                </AnimatedLayout>
-              }
-            />
+          <Box as="main">
+            <Routes>
+              <Route path="/" element={
+                  <AnimatedLayout>
+                    <Homepage/>
+                  </AnimatedLayout>
+                }
+              />
+              <Route path="/courses" element={
+                  <AnimatedLayout>
+                    {isLoggedIn ? <CoursesPage/> : <Navigate to="/" />}
+                  </AnimatedLayout>
+                }
+              />
+              <Route path="/tests" element={
+                  <AnimatedLayout>
+                    {isLoggedIn ? <TestsPage/> : <Navigate to="/" />}
+                  </AnimatedLayout>
+                }
+              />
+              <Route path="/login" element={
+                  <AnimatedLayout>
+                    {!isLoggedIn ? <LoginPage/> : <Navigate to="/" />}
+                  </AnimatedLayout>
+                }
+              />
+              <Route path="/signup" element={
+                  <AnimatedLayout>
+                    {!isLoggedIn ? <SignupPage/> : <Navigate to="/" />}
+                  </AnimatedLayout>
+                }
+              />
+            
 
-            <Route path="/course/:courseId" element={isLoggedIn ? <CourseDetailsPage/> : <Navigate to="/" />}/>
-            <Route path="/test/:testId" element={isLoggedIn ? <TestDetailsPage/> : <Navigate to="/" />}
-            />
-          </Routes>
+              <Route path="/course/:courseId" element={isLoggedIn ? <CourseDetailsPage/> : <Navigate to="/" />}/>
+              <Route path="/test/:testId" element={isLoggedIn ? <TestDetailsPage/> : <Navigate to="/" />}
+              />
+            </Routes>
+          </Box>
         </BrowserRouter>
         
         <footer className="footer">

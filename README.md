@@ -19,6 +19,7 @@ Pod koniec każdego kursu należy zaliczyć test składający z 15-20 pytań. Po
 ## Instrukacja uruchomienia
 ```bash
 npm install
+npm run build
 npm run dev
 ```
 
